@@ -27,6 +27,21 @@ if is_good_choice == True:
 if not is_good_choice:
     print("Probably not a good idea")
 
+#Calculate price of meal and discount
+
+meal_cost = float(input("How much was your meal?"))
+
+
+
+if meal_cost <=20:
+    print (f"No discount applied, Your meal is £{meal_cost}")
+
+else:
+    print (f"Discount applied, Your meal is £ {meal_cost * 0.9}")
+
+
+
+
 
 #print(f'Your burger is within the budget: {budget} and is vegetarian = {veg_option}')
 #print('Restaurant meets criteria: {}'.format(is_good_choice))
@@ -34,7 +49,7 @@ if not is_good_choice:
 
 
 #new_exercise
-
+'''
 mars_choice= input('Would you like to visit Mars? y/n: ')
 is_willing = mars_choice == 'y'
 
@@ -44,4 +59,4 @@ can_afford = affordable == 'y'
 should_visit_mars = is_willing and can_afford
 
 print(f'You should visit Mars: {should_visit_mars}')
-
+'''
