@@ -1,9 +1,10 @@
-#Boolean
-today =input('What day is it?')
+#Budget of £10, write a program to decide which burger
+#restaurant to go to
 
-is_monday = today =='Monday'
+#input price of burger
 
-print(f'Today is Monday: {is_monday}')
+burger_price= input("How much is the burger?")
 
-#
+budget =float(burger_price) <=10
 
+print(f'Your burger is within the budget: {budget}')
