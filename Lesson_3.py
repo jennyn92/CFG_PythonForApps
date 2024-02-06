@@ -2,6 +2,14 @@
 #restaurant to go to
 
 #input price of burger
+'''
+Rewrite the output of your burger program to use if statements
+If it is a good choice it should be:
+This restaurant is a great choice!
+If it is not a good choice it should be:
+Probably not a good idea
+'''
+
 
 burger_price= input("How much is the burger?")
 
@@ -13,8 +21,16 @@ veg = veg_option == "y"
 
 is_good_choice = budget and veg
 
+if is_good_choice == True:
+    print("This restaurant is a great choice")
+
+if not is_good_choice:
+    print("Probably not a good idea")
+
+
 #print(f'Your burger is within the budget: {budget} and is vegetarian = {veg_option}')
-print('Restaurant meets criteria: {}'.format(is_good_choice))
+#print('Restaurant meets criteria: {}'.format(is_good_choice))
+
 
 
 #new_exercise
@@ -28,3 +44,4 @@ can_afford = affordable == 'y'
 should_visit_mars = is_willing and can_afford
 
 print(f'You should visit Mars: {should_visit_mars}')
+
