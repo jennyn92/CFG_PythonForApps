@@ -14,5 +14,5 @@ is_password_correct = password == "dinosaurs"
 if is_admin and is_password_correct:
     print("Welcome")
 
-if not is_admin or not is_password_correct:
+else:
     print('Go away')
